@@ -17,7 +17,6 @@ def click(event=None):
     text.insert(END, '\n' + send)
     b = a.get().lower()
     b = remove_accents(b)
-    print('2', b)
 
     if b == 'oi':
         text.insert(END, '\n' + 'Bot: Oi, tudo bem?')
@@ -39,6 +38,6 @@ send = Button(root, text='Enviar', bg='white', width=20,
               command=click).grid(row=1, column=1)
 a.grid(row=1, column=0)
 
-root.title('Gracebot aula03')
+root.title('Gracebot aula04')
 root.bind('<Return>', click)
 root.mainloop()
